@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="card parent">
+            <div class="card_number div1" id="card_number">3238 2324 2323 2323</div>
+            <div class="card_name div2" id="card_name">Joshua Leisk</div>
+            <div class="exp_date div3">09/31</div>
+        </div>
+        <div class="data">
+            <form>
+                <div class="cnumer int">
+                    <label for="c_number">Card Number:</label><br>
+                    <input type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="16" id="c_number" placeholder="xxxx xxxx xxxx xxxx"><br>
+                </div>
+                
+                <div class="int">
+                    <label for="c_name">Card Name:</label><br>
+                    <input type="text" id="c_name" placeholder="Joshua Leisk" maxlength="15"><br>
+                </div>
+                <div class="int">
+                    <label for="">Expiration date</label><br>
+                    <select name="month" id="exp_month">
+                        <option value="01" selected>01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                    <select name="year" id="exp_year">
+                        <option value="2023" selected>2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                        <option value="2030">2030</option>
+                        <option value="2031">2031</option>
+                        <option value="2032">2032</option>
+                    </select><br>
+                </div>
+                <div class="int">
+                    <label for="">CVV</label><br>
+                    <input type="tel" inputmode="numeric" maxlength="4" id="cvv_number" placeholder="1234"><br>
+                </div>
+                <input type="submit" value="Submit" class="submit button-6">
+              </form>
+        </div>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
