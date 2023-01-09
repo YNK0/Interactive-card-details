@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>YNK0-01</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="main">
+        
         <div class="card parent">
-            <div class="card_number div1" id="card_number">3238 2324 2323 2323</div>
+            <div class="card_number div1" id="card_number">4152 8746 7355 4114</div>
             <div class="card_name div2" id="card_name">Joshua Leisk</div>
-            <div class="exp_date div3">09/31</div>
+            <div class="exp_date div3" id="card_date">09/31</div>
         </div>
         <div class="data">
             <form>
@@ -27,32 +28,8 @@
                 </div>
                 <div class="int">
                     <label for="">Expiration date</label><br>
-                    <select name="month" id="exp_month">
-                        <option value="01" selected>01</option>
-                        <option value="02">02</option>
-                        <option value="03">03</option>
-                        <option value="04">04</option>
-                        <option value="05">05</option>
-                        <option value="06">06</option>
-                        <option value="07">07</option>
-                        <option value="08">08</option>
-                        <option value="09">09</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                    </select>
-                    <select name="year" id="exp_year">
-                        <option value="2023" selected>2023</option>
-                        <option value="2024">2024</option>
-                        <option value="2025">2025</option>
-                        <option value="2026">2026</option>
-                        <option value="2027">2027</option>
-                        <option value="2028">2028</option>
-                        <option value="2029">2029</option>
-                        <option value="2030">2030</option>
-                        <option value="2031">2031</option>
-                        <option value="2032">2032</option>
-                    </select><br>
+                    <input type="tel" inputmode="numeric"   autocomplete="cc-date" maxlength="02" id="cc_month" placeholder="10" class="date_form">
+                    <input type="tel" inputmode="numeric"   autocomplete="cc-date" maxlength="02" id="cc_year" placeholder="29" class="date_form"><br>
                 </div>
                 <div class="int">
                     <label for="">CVV</label><br>
@@ -60,7 +37,9 @@
                 </div>
                 <input type="submit" value="Submit" class="submit button-6">
               </form>
+              
         </div>
+        <h1>Interactive card details by @YNK0</h1>
     </div>
     <script src="js.js"></script>
 </body>

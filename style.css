@@ -1,5 +1,6 @@
 body {
-    background-color: #ddd;
+    background-color: #fff;
+
     
 }
 
@@ -19,14 +20,12 @@ background: linear-gradient(71deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 67%)
 
 .data {
     padding-top: 5rem;
-    background-color: white;
+    background-color: #fff;
     width: 450px;
-    
+    border: 2px solid #000000;
     border-radius: 10px;
     font-family:sans-serif;
-    box-shadow: -8px 13px 32px 5px rgba(0,0,0,0.56);
-    -webkit-box-shadow: -8px 13px 32px 5px rgba(0,0,0,0.56);
-    -moz-box-shadow: -8px 13px 32px 5px rgba(0,0,0,0.56);
+    padding-bottom: 1.5rem;
     font-size: 15px;
     font-weight: 551;
 }
@@ -34,10 +33,16 @@ background: linear-gradient(71deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 67%)
 .main  {
     display: grid;
     place-items: center;
+    perspective: 1000px;
 }
 
 .int {
     padding-top: 10px;
+}
+
+h1  {
+    font-family:sans-serif;
+    font-size: 15px;
 }
 
 form {
@@ -64,16 +69,6 @@ input:focus {
 
 #cvv_number {
     width: 50px;
-}
-
-select {
-    border: 1px solid #a2a9b3;
-    border-radius: 5px;
-    margin: 5px 10px 0 10px;
-}
-
-select:focus {
-    outline: none;
 }
 
 input::placeholder {
@@ -121,3 +116,8 @@ input::placeholder {
     height: 25px;
     margin: 5px;   
 }
+
+.date_form {
+    width: 50px;
+}
+
